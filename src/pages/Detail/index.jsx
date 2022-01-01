@@ -4,7 +4,9 @@ import { Link, useParams } from "react-router-dom";
 import Select from "react-select";
 
 const fetcher = async (productId) => {
-  const res = await axios.get(`http://localhost:4000/products/${productId}`);
+  const res = await axios.get(
+    `https://json-s-dog-stickers.herokuapp.com/api/products/${productId}`
+  );
 
   return res.data;
 };

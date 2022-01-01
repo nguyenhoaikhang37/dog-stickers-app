@@ -3,7 +3,9 @@ import { useQuery } from "react-query";
 import ProductItem from "./UI/ProductItem";
 
 const fetcher = async () => {
-  const res = await axios.get("http://localhost:4000/products");
+  const res = await axios.get(
+    "https://json-s-dog-stickers.herokuapp.com/api/products"
+  );
 
   return res.data;
 };
