@@ -1,0 +1,149 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Unicorn",
+      "desc": "They exist!",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-fc750eaa.jpg%3Fv%3D1616988549&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-1fd03b4a.jpg%3Fv%3D1601536949&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-72f9380c.jpg%3Fv%3D1601536952&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-5039e70b.jpg%3Fv%3D1601536953&w=3840&q=75"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "The Fashionista",
+      "desc": "You know he's got his own personal stylist.",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-6aeffeca.jpg%3Fv%3D1617396810&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-1819a219.jpg%3Fv%3D1601536834&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-5e8b0b6b.jpg%3Fv%3D1601536835&w=3840&q=75"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Drooler",
+      "desc": "Look at that crazy and cute face!",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-de719380.jpg%3Fv%3D1617396832&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-d00d1d64.jpg%3Fv%3D1601536750&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-1a2c4f05.jpg%3Fv%3D1601536751&w=3840&q=75"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The Player",
+      "desc": "Catch this sticker today!",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-954d2eff.jpg%3Fv%3D1617396842&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-5722417c.jpg%3Fv%3D1601536656&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-b707691c.jpg%3Fv%3D1601536655&w=3840&q=75"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Scaredy Dog",
+      "desc": "No surprise courage and him are best friends.",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-306a1416.jpg%3Fv%3D1617396850&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-ae543f00.jpg%3Fv%3D1601536555&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-076cc21b.jpg%3Fv%3D1601536556&w=3840&q=75"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "The Pee-er",
+      "desc": "Public enemy No. 1",
+      "prices": [
+        {
+          "price": 9.99,
+          "size": "3 x 3"
+        },
+        {
+          "price": 10.99,
+          "size": "4 x 4"
+        },
+        {
+          "price": 11.99,
+          "size": "5 x 5"
+        }
+      ],
+      "imgList": [
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-f7e1805f.jpg%3Fv%3D1617396866&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-e17e824d.jpg%3Fv%3D1601536418&w=3840&q=75",
+        "https://www.doggystickers.xyz/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F2800%2F2014%2Fproducts%2Fmockup-db2a80ae.jpg%3Fv%3D1601536419&w=3840&q=75"
+      ]
+    }
+  ]
+}

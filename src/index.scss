@@ -1,0 +1,375 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+$primary-color: #5b21b6;
+$gray-color: #4b556a;
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  &-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-main {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid RGB(245, 243, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &-img {
+    width: 32px;
+    aspect-ratio: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-cart {
+    font-size: 30px;
+    color: $primary-color;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &-children {
+    padding-top: 90px;
+  }
+
+  &-heading {
+    font-size: 36px;
+    font-weight: 600;
+    color: $primary-color;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &-title {
+    margin: 30px 0;
+    color: $gray-color;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-heart {
+  color: #db2627;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.product {
+  &-list {
+    --spacing: 100px;
+    --columns: 3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+  }
+
+  &-box {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: 30px;
+    border: 1px solid rgba(245, 243, 255, 1);
+    box-shadow: (0 0 transparent, 0 0 transparent),
+      (0 0 transparent, 0 0 transparent), 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  &-content {
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  &-img {
+    border-bottom: 2px solid rgba(245, 243, 255, 1);
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+  &-name {
+    font-size: 24px;
+    color: $primary-color;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  &-desc {
+    font-size: 18px;
+    color: $gray-color;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  &-price {
+    font-size: 18px;
+    color: $primary-color;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    width: 90px;
+    padding: 5px 0;
+    background: #f5f3ff;
+    text-align: right;
+    padding-right: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-style: solid;
+      border-width: 18px 0 18px 20px;
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+}
+
+.detail {
+  &-wrapper {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  &-main {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+  &-img {
+    max-width: 450px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-size {
+    width: 100%;
+  }
+  &-btn {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f5f3ff;
+    }
+
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+  &-name {
+    font-weight: 600;
+    font-size: 30px;
+    color: $primary-color;
+    margin: 30px 0 20px 0;
+  }
+  &-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &-price {
+    font-weight: 600;
+    font-size: 20px;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  &-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  &-submit {
+    margin-top: 10px;
+    background: $primary-color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+    font-weight: 600;
+    font-size: 18px;
+    gap: 0 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: #4d1d95;
+    }
+  }
+}
+.qty {
+  &-name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: $gray-color;
+  }
+  &-input {
+    input {
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      padding: 5px 5px 5px 10px;
+      max-width: 50px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.size {
+  &-name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: $gray-color;
+  }
+}
+.section {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 20px;
+}
+.section__item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+}
+
+@media screen and (max-width: 769px) {
+  .product {
+    &-list {
+      --columns: 2;
+    }
+  }
+
+  .detail-main {
+    flex-direction: column;
+    gap: 30px 0;
+
+    .detail-img {
+      max-width: 300px;
+    }
+    .detail-btn {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .product {
+    &-list {
+      --columns: 1;
+    }
+  }
+}
