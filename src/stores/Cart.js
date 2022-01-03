@@ -2,7 +2,7 @@ import { atom, selector } from "recoil";
 
 export const cartState = atom({
   key: "cartState",
-  default: [],
+  default: JSON.parse(localStorage.getItem("CART_LIST")) || [],
 });
 
 export const cartTotal = selector({

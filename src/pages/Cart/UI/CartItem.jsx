@@ -19,7 +19,7 @@ const CartItem = ({ cart }) => {
         (x) => x.size === product.size && x.id === product.id
       );
       newCarts.splice(foundIndex, 1);
-
+      localStorage.setItem("CART_LIST", JSON.stringify(newCarts));
       return newCarts;
     });
   };
