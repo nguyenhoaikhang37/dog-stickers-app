@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useQuery } from "react-query";
+import Loading from "../../components/Loading";
 import ProductItem from "./UI/ProductItem";
 
 const fetcher = async () => {
@@ -13,7 +14,7 @@ const fetcher = async () => {
 const Products = () => {
   const { data: products, isLoading } = useQuery("products", fetcher);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loading />;
 
   return (
     <div className="wrapper">

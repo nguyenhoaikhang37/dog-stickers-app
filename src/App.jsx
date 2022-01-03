@@ -3,6 +3,7 @@ import Products from "./pages/Products";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Fragment } from "react";
 import Detail from "./pages/Detail";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -22,6 +23,14 @@ function App() {
           element={
             <Main>
               <Detail />
+            </Main>
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            <Main>
+              <Cart />
             </Main>
           }
         />
