@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Fragment } from "react";
 import Detail from "./pages/Detail";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
           element={
             <Main>
               <Detail />
+            </Main>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <Main>
+              <Login />
             </Main>
           }
         />

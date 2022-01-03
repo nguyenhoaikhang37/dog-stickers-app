@@ -2,16 +2,22 @@ import { Empty } from "antd";
 import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { cartState } from "../../stores/Cart";
+import { userState } from "../../stores/User";
 import CartList from "./UI/CartList";
 
 const Cart = () => {
   const cart = useRecoilValue(cartState);
   const navigate = useNavigate();
   const setCarts = useSetRecoilState(cartState);
+  const [user, setUser] = useRecoilState(userState);
 
   const handleCheckout = () => {
+    if (!user.loginStatus) {
+      navigate("/login");
+      return;
+    }
     toast.success("You have successfully paid! 🎉🎉🎉");
     navigate("/");
     setCarts([]);

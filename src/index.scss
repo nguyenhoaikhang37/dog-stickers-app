@@ -524,3 +524,30 @@ $gray-color: #4b556a;
 .table {
   width: 100%;
 }
+
+.google-btn {
+  display: flex;
+  justify-content: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.avarta {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+
+  ion-icon {
+    font-size: 20px;
+    color: #ff4c4f;
+    cursor: pointer;
+  }
+}
+
+.avarta-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
