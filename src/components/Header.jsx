@@ -4,6 +4,8 @@ import { useRecoilState, useRecoilValue } from "recoil";
 import Images from "../constants/images";
 import { cartState } from "../stores/Cart";
 import { userState } from "../stores/User";
+import { Menu, Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -15,6 +17,16 @@ const Header = () => {
     setUser((prev) => ({ ...prev, loginStatus: false }));
     navigate("/login");
   };
+
+  const menu = (
+    <Menu>
+      <Menu.Item key="3">
+        <span className="avarta-icon" onClick={logout}>
+          <ion-icon name="log-out"></ion-icon> Log out
+        </span>
+      </Menu.Item>
+    </Menu>
+  );
 
   return (
     <header className="header-main">
@@ -39,13 +51,12 @@ const Header = () => {
           </Link>
 
           {user.loginStatus && (
-            <div className="avarta">
-              <Avatar src={<Image src={user.img} style={{ width: 32 }} />} />
-              {user.name}
-              <span className="avarta-icon" onClick={logout}>
-                <ion-icon name="log-out"></ion-icon>
-              </span>
-            </div>
+            <Dropdown overlay={menu} trigger={["click"]}>
+              <div className="avarta" onClick={(e) => e.preventDefault()}>
+                <Avatar src={<Image src={user.img} style={{ width: 32 }} />} />
+                {user.name}
+              </div>
+            </Dropdown>
           )}
         </div>
       </div>
