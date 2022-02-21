@@ -29,4 +29,5 @@
 
 ```
   npm start (or yarn start)
+  test
 ```
